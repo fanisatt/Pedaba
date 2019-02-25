@@ -1,0 +1,347 @@
+Installation Instructions for Pedaba
+Pedaba is a powerful portable general purpose database application for Linux 64bit Operating Systems (OSs).
+The application is written in C language.
+It has been tested in Debian-compatible OSs (eg MX Linux) , in Linux Mint , KUBUNTU , Fedora 29 , PCLINUX OS etc.
+Memory requirements range from 130 to 300 MB approximately.
+It supports English and Greek languages. (The application checks the keyboard type (setxkbmap -query) and it is compatible with "us" and "el/gr" layouts.
+As with most open source applications, the pedaba creator does not provide any warranty on application functionality or on your data security.
+Use it at your own risk.
+- Before you try pedaba , you must install the following (necessary precondition) :
+a. Zenity (from your OS repositories)
+b. SDL_bgi (Borland Graphics Interface - based on the well-known SDL 2 and it is installed very easily and as it seems without affecting your OS.) 
+You can download the library as a Debian Package or as a RPM package here:
+http://libxbgi.sourceforge.net/
+(For PCLINUX users , give as root : "rpm -ivh /pathname/SDL_bgi-2.2.4-1.x86_64.rpm")
+
+Then simply copy the pedaba folder to your personal directory "/home/UserName".
+Within the "Pedaba" folder you will see the executable "pedaba" file. There is also an ascii (.txt) file with general instructions.
+
+Many Thanks to Dr. Guido Gonzato who created the special SDL_bgi graphics compatibility library!
+Many Thanks to Zenity team for their wonderfull application.
+Many Thanks to all ... Linux workers...!!
+
+Sincerely Yours
+Fanis Attard
+(email : fanisatt@yahoo.gr)
+
+
+General Instructions for Using the Application
+
+1. GENERAL 
+
+Pedaba creates data cards where you can enter text, numbers, images (bmp), and dates as data fields. 
+The images appear normally, but what the pedaba "remembers" is the link of the image file in your disk. 
+When you write (as text), links for the WEB or links for your music files , or video or images in your disk, these can easily be directly interconnected with general external applications as appropriate (Firefox, Google-Chrome, VLC, Gimp, Inkscape) through the pedaba. 
+With pedaba you can create dynamic data selection lists (buttons), which may (or not) be directly linked to specific data fields and in any case with the clipboard of the operating system for any use. (Fields associated with selection lists has the same use as text fields). Your data cards are automatically archived and rearchived , based on a field-sorting key you choose. (Text, number or date). 
+If you do not select a field as the sorting key then the database will be classified based on the chronological order of registration of each card. 
+As database we consider the design-structure files of the base and all the active cards. 
+You can reclassify (resort) the database directly, by changing or removing the sorting key. Regardless of the general classification, you can make individual classifications based on data fields, which do not affect the general one but, help you much in locating any items you want. Data searching can be simple or complex. Complex search criteria can be saved in the disk for reuse! 
+Searches are aimed mainly at identifying one or more data cards, which somehow are pulling "out of the drawers" to deal exclusively with them ! 
+The selection of archived data cards for work, can be either free or through searching criteria or by combining the first to the second case. 
+You can save data cards in the disk in the form of plain text (ascii text), for free use at your discretion. 
+You can create thousands of data cards. Each card can contain up to 100 different data fields (texts - numbers - pictures - dates). 
+Fields can appear on different pages of the card - up to 100 pages per card. You can see directly whatever field you want in any page     (right-click in the free space of the screen to select the field you want from a list created by pedaba).
+
+2. Information and Command Line 
+
+From left to right we can see: 
+ a. The "button" menu. 
+ b. The display area for ​​the folder name of the loaded database. When the mouse passes from there the full path is displayed. 
+ c. The display area of pedaba operational modes (basics and others) . 
+ d. The specific indicators area, when certain data cards appear, after complex search or after your own personal multiple selection. 
+ e. The new data card creation button. When you load a database, pedaba automatically prepares a new blank data card ready for input data and registration. If you choose to do something else with registered tabs then, use this button to get the new blank card. 
+ f. The area indicating the number of the registered cards in the database. 
+ g. Double-arrow (left direction) to select the previous data card depending on the operational mode of pedaba. (You will understand later ..) 
+For example, if you choose 10 cards to work with them then, the directional arrows will always exhibit any of these 10. Instead of arrows you can use the keyboard arrow keys (with little attention) because, in design mode (to read below), the arrow keys are used for mini-movements of the data fields . 
+ h. The number of the current data card. It is a data card selection button too. When working in a new card before you decide to save it to disk , that number is one greater than the total number of the loaded cards. When the mouse passes from this area a red underline appears and if you click on this area, a window appears through which you can select a particular card from the already registered. It. The double arrow to the right, operates in an analogous manner to the counterpart. 
+ j. The button "Save the card in the disk" ... The data you enter or modify in the new or other data cards are not saved immediately in the disk until you click on this button. If you forget it , pedaba will remind you. 
+ k. The current page number and the arrow buttons up and down to change the page. You can change the page with the wheel of your mouse too. 
+ l. The mouse pointer coordinates, or the upper left corner coordinates and dimensions of any data field (when the mouse passes through a field). It is only for your information.
+
+3. MAIN MENU - OPTIONS
+
+Main menu is a picture-menu window with 24 picture-options and each of them located within a colored circle. 
+Apart from the options menu provides (by choice) and related assistance / information to the user, depending on the operational mode of pedaba. 
+In the lower part there is a box filled with a brown color. As you move the mouse pointer over the menu icons, you can see at the brown bottom rectangle   the general description of each option-operation.
+Depending on the event you can see markings on the top and right of your selection cycle (this marking box appears with black letters in a yellow background). This is either for your information , or because some individual features require left click or right click . The fill color of the circle means as appropriate: 
+ a. Green: This option is possible now! 
+ b. Red: This option is not possible now! 
+ c. Blue: This option is already running! In a corresponding color you can see the text in the brown rectangle at the bottom of the menu as mentioned above. You can close the main menu clicking the "GO" selection or by right clicking outside of the menu window.
+
+
+4. MAIN MENU OPTIONS - Basic Operations 
+
+ a. Creation of a new Data Base
+
+The new database is a data folder ! You specify the folder name and the directory/path where you want to create. 
+The database files in the folder have specific names and are created by the application. 
+Making copies of this folder is the best maintenance and security measure ! 
+Immediately after creating a new database, you can continue with "Add - Remove - Edit DB Fields". 
+
+
+ b. Load a DB
+ 
+You can load any database you have previously created. 
+You should only remember the directory you saved it. Every time you have to load the "Mainped.aba" file. 
+
+
+ c. Save the DB
+
+This option saves your work and reloads the DB but ... great ATTENTION to the following: The first data card has to be previously saved by clicking the "Save Card" button at the Command Line! As no data card is saved , the "Save the DB" option is saving only the base structure, without any registration data for your first card. 
+This is done intentionally because many times we need to work a little more in our first card becasue all the other will have the same structure! 
+Saying structure we mean the number and type of each data field, the location of fields , field names (labels) , the page number of each field, the desired colors, any locked fields with passwds and related design elements. 
+It is therefore very important to keep in mind that , when you save to disk the first data card , it means that you have finished with the overall design of the structure of the database! 
+After saving the first card , it is no longer possible to add or remove fields or change the type of field and fluctuation field capacity is indeed possible, but not always feasible as far as we want. 
+Clearly we can modify at any time all other features of the fields, (location - names (labels) - fonts - page number - colors etc.) 
+
+
+ d. Design the DB (design mode)
+
+It is one of the three main operating modes of pedaba ! You enter this mode every time you create a new database or whenever you load a database without data cards (ie when you do not save any card or, you have deleted all the cards). 
+You can surely enter in design mode any time you want. 
+The design mode allows (by right-clicking on a field area) to modify the characteristics of each field, such as changing the name of the field, the position of the screen, the page where they appear, etc.. 
+This mode facilitates the fields' and labels' movements with the mouse. Bringing the mouse cursor over a field or a label (label is the name of the field) and firmly pressing the left mouse button (continously) for one second, we see the selected area shaded and we can move it to another location. The new location affects all cards. If we move something by mistake, right-click and the process is canceled. 
+Moving fields and labels with the keyboard arrow keys are allowed only in this mode (design mode), when the mouse pointer is initially placed on a field or label area. If the mouse pointer is out of any field or label the directional keys show the next or previous card. 
+You can change the rectangle dimensions of any item (field - label) in all pedaba modes. If you move the mouse pointer in the lower-right part of the item you will notice that a red corner is displayed. Left click on thiw corner to change the size of the item. 
+Data entry into the fields is not possible, while you are in design mode.
+
+
+ e. Close the DB
+
+It closes the current database and then, you can load another one. 
+
+
+ f. Add - Remove - Edit DB Fields
+
+You can add or remove fields and define the fields type as long as you do not save any data card.
+The management of existing fields (otherwise) is always possible as long as you enter design mode and right-click on a field or label. 
+The character limit for each field should be determined as accurately as possible in the design phase.
+You can modify it (a little) later but, perhaps not to the desired degree ! 
+Clicking this option a data fields' properties management window is displayed. You can define here all the information relating to the functionality and appearance of each field. 
+Especially in the beginning, when you create the first database, you can experiment without haste ... 
+Create your first field, click Yes at the bottom right of the window and then leave with OK. (Of course you can create more fields, but it is good to just see your first field.) Note the link of (every) field with its label and vice versa. 
+Right-click the field or label, modify something ... (font - colors etc.) 
+Move something or change the dimensions. Then continue with other new fields ... 
+Especially for the field type "Text from ready list" , you must have previously created and load the desired ready list (actually selection list). If you do this for first time, first load a list that already exists in pedaba. 
+Give the maximum character limit for such fields (50) just to see the process. Later you can change the name of the list ... but not the type of field !
+
+
+ g. Input Data - Edit DB Fields' Data
+
+This is the second mode of the three main operating base modes! (input mode)
+After finishing the design of the DB , you should put pedaba in this mode, to start data entry. When a database has registered data cards (even one) , then loading the database, the application will automatically get this mode and it gives you a blank card ready for data entry. 
+At the top of the screen you can see the total number of registered records and the number of the current card. 
+Left-click on any field to enter and / or process your data . The processing relates to text and numeric fields. 
+For the other types, it is only possible to make a new entry. 
+Right click on a not empty field displays a menu of individual options. Use this menu as where you think appropriate.
+Especially for text fields that do not fit on a screen in one processing line (because the character limit does not allow it), a special input window is displayed , which is similar to a word processor. There are auxiliary options and a picture-menu , which will help you to do the job more easily . 
+You can move the input window wherever you want , you can change it's size, font and colors, simply and only to work more comfortable, without really changed the location, dimensions and data field display colors! 
+You can interconnect selected text to an external application. (Double click to select an entire paragraph.) 
+You can use any loaded ready list you want. 
+You can search for a string, regardless of the general search criteria that might have set in the complex or simple search. 
+While the input window is active, you can see it's own picture-menu by right-clicking anywhere on the screen.
+As you can see, it is possible to import plain text files (ascii) in it and you can also save it's contents wherever you want in the disk. (The database stores all the information for each field, regardless of whether you'll save or not a particular one text field). 
+It is also possible the "Undo" option in the special window, not at any time but, after relatively large changes such as a block deletion or a file importation. 
+For picture fields (only windows bmp), it is worth noting that it is possible to load an image by dragging and dropping one from another window (eg from thunar) in the image field of pedaba. 
+The input mode allows the fields and labels movement with the mouse as mentioned in design mode, with the difference that, you have to hold down the left mouse button for two seconds (instead of 1). It also allows fields' resizing. 
+
+
+ h. Show / Change the Sorting key (field)
+
+When the mouse pointer "standing" on this option , you can see an auxiliary label that shows the registration key (if appointed) and its content (up to 25 characters). Useful for multipage data cards ... 
+By left click we can "go" to this field (you can see the field blinking). 
+By right click you can change or remove the sorting key. The reclassification is done immediately! 
+
+
+ i. DB Cards Presentation (no criteria)
+This is the third basic operating mode. (presentation mode)
+It is the "safe" state, meaning that it precludes the modification of already saved data. 
+The tabs are presented, such as we entered. No criteria means "free" presentation ,  because we are moving freely to the next or previous data card without considering any search criteria or other user's personal choices. 
+By left-click on the "larger" text fields you can see a scroll bar appears on the right side of the field, in order to scroll our text.
+After removing the mouse from the field area, the text remains in the point we left it and we can look at another field in the same or another page.
+
+
+ j. Complex Data Search/Define criteria
+We can define different search criteria for any field type (text - number and date).
+Let me give you a simple example , we have created a data base with these fields among others : "Earthquake type" - "Τerritorial division" - "Richter scale size" - "EQ Event date". 
+Regarding the "Τerritorial division" (text field) we search for a string like ... "Myconos". (Small-caps-accented letters do not affect search). 
+Regarding the "Richter scale size" (numeric field) we can search for something quite specific (like 5,5) or, a range of EQ sizes eg larger of 3 and smaller of 5 or,  larger than 4 or, smaller than 6. 
+Regarding the "EQ Event date" (date field), we can search for EQ events that happen LIKE TODAY (any year), or in a specific period from ... to .... or, in the period after a certain date or before a certain date. 
+Note that the complex search procedure considers a data card as "compatible" with your criteria, when it satisfies all the criteria you requested and not some of them! 
+The complex search window provides options so that the criteria you have set , you can view them recorded in narrative form, you can save them in the disk and load them for reuse. 
+Since you search data, you are informed about the searching result and if some data cards found that meet your criteria, then the presentation of these tabs takes place. 
+
+
+ k. DB Cards Presentation by search criteria
+
+It is a condition that resembles the simple (free) presentation, except that the presentation is restricted on the cards that meet your criteria.
+Pedaba presents only them !! A typical indicator (an eye) appears at the top of the screen. 
+If you seek (among other) specific strings in your text fields, then selecting these fields with the mouse, you can see labeled the requested strings. By left mouse button click you can move downwards into the text field (observing finds) and by the right one you can move upwards. 
+DB Cards Presentation by search criteria is associated with the options "Delete DB cards", "Save DB cards" and "Multiple DB cards Selection" . 
+Assuming that there are five cards meeting the search criteria. Then you can directly ask for their massive deletion or storage in ascii form.
+This kind of presentation (by criteria) is a very "fragile" situation because, if you make any changes to your data then, the previous search report (and anything depends on it) , may not be valid anymore. For this reason pedaba easily cancels it. 
+For example , if you enter in "input mode" then, the previous search results expire, which happens in many other cases, at the discretion of pedaba and always for safety reasons. 
+If you want to work again on this mode ,you should repeat the complex search. There is of course a very simple way to keep these cards selected (as many satisfied finder criteria) for further work on them. This process will be reported when the "Multiple Selection" option will be considered.
+
+
+ l. Locate DB Card with simple Data Search
+This option works in conjunction with any basic condition (design - registration - presentation).
+It cancels DB Cards Presentation by search criteria and it does not affect the multiple sellection as we will see later. 
+The purpose here is the quick identification of one single DB card. 
+At first , a list of your fields appears. Here you can select only one field (reference field). 
+- If you have selected a text field ,a numeric or a date-field , a window appears in which you can see a list of the contents of this field for all of your DB cards (approximately the first 45 characters of each field). 
+If you click (once) on a list selection then, you can also see (for your help) part of the content of the classification field (sorting key).
+But if the reference field is the same as the sorting key-field then, you can see the first image of the corresponding DB card, although of course there is an image field . 
+The list can be displayed unclassified or classified. 
+In this way if we generally classify a database on the "Last Name", we can easily see here the Short Names sorted or, on any other field's data. 
+This does not affect the general classification. 
+Τhere is also an option for searching the listed items of the reference field. This process underlines any records that meet your criteria.
+The search does not only concern to the few characters by field we can see, but in the whole content of every field .
+If you have already chosen something with the left mouse button, then click on the characteristic (OK) sign at the bottom, to display the corresponding DB card. 
+The whole process can be done by double clicking on any list item.
+Finally, pedaba shows the corresponding DB card and indicates the field of your interest to the page it is located.
+
+- If you've selected an image field, (this is possible ONLY HERE in simple data search option), then you are asked if you want to combine the image field with a specific text - date or numeric field. 
+If you do not select a specific field, you will see each picture along with the corresponding sorting key-field of each card (limited data) in a 6Χ4 dimension rolling photo table (24 images). 
+From there on , the job is the same as it was mentioned above .
+IF SOMETHING IS NOT OK with the appearance of the photo table then, please change the background color for your image-field. (Enter design mode - right click on the desired image field and see selections under the "Colors" tab...)
+
+
+ m. Multiple DB cards Selection
+
+ Multiple selection ... not only for DB cards but for data fields too but ... it is not a spreadsheet ! 
+  Here you can select any fields you want and consider necessary for your information (except the image fields), in order to  decide more easily and quickly which DB cards you want to see.
+ Image fields are not included here but, if accidentally choosed, the process is not affected. 
+ At start, you can see the list of your fields. 
+ To select several fields with ease, use the left and right mouse button. 
+ Where you left-click an item (a field in the list) , this field will be selected if it was not previously selected and vice-versa , it will be unselected if it was previously selected.
+ When you right-click on a NOT selected field then, all non-selected fields from there and upwards will be selected.
+ When you right-click on a selected field, then all selected fields from there and upwards will be unselected.
+ Once finished, you are asked for the reference field.
+ Note that , only the components of the reference field can be sorted and based on this sorting you will see all the other selected fields. The general DB classification is not affected.
+ Note also that, only the data of the reference field can be searched. It is reminded that, the search does not only concern to the few characters by field we can see, but in the whole content of every field. In addition , here in "Multiple DB cards Selection" , you can select massively by clicking on a button , all these DB cards that meet your searching criteria you set every time on the spot !
+ After you select this field , a window appears with the requested data fields in columns (displayed up to 25 characters about for each field). The reference field is always located at the first column to the left and remains there.
+ You can scroll the table to the right or left, depending on the number of fields you have selected. 
+ Scrolling can be done easily with the arrow keys. You can capture or release fields' columns when scrolling. 
+ Here ,  you can select as many DB cards as you want, using left and right mouse-click as mentioned above.
+ All selections can be canceled at any time by clicking CANCEL. 
+ Leaving from here and if you have selected cards, the pedaba enters input mode, and you can deal exclusively with selected tabs. 
+ You can see a typical indicator (a magnifying glass) at the top of the screen. 
+ It is a situation like.. we have put out of our office drawers a number of dossiers (each dossier is a DB card), in order to work exclusively with them.
+ That's why pedaba enters you in input mode. Surely , there is no problem if you change the operating mode.
+ Of course you can immediately and massively delete these DB cards and / or save their contents in the disc (ascii text). 
+ This operating mode is not "fragile" as the complex search ! 
+ Your selections are removed only when you choose it, by right-clicking the οption "Multiple DB cards Selection" in the menu or by deleting the selected tabs !! 
+ If you do not do this, of course, pedaba can temporarily exit from this mode , since you decide to search individually for other DB cards or, because you decided to show cards in free presentation mode but, you can return here taking control over the previously (multiple) selected cards,  by right click (again) at the menu option "Multiple DB cards Selection". 
+ The main menu informs you accordingly .. 
+ The complex search is connected with multiple selection in the sense that, the specific DB cards that satisfy criteria on complex search, can be added here . Select "Multi DB cards selection " as long as the presentation under criteria remains valid and after the "Multiple DB cards Selection" window appears, you will see a special button/option for this, at the bottom of the window.
+
+ 
+ n. DB Card(s) Deletion
+
+Here you can delete one or more cards. It depends on the situation in which you put the application.
+For each case , main menu informs you.
+Deleting all cards does not delete the database structure. The structure remains available for treatment and possibly adding new cards. 
+The only way to completely delete a database is to delete the folder using your operating system. 
+
+
+ o. Save DB Card(s) as .txt
+ 
+As above, it depends on the situation in which you put the application.
+For each case , main menu informs you.
+
+ p. Creation of a Ready List
+Suppose that we need a ready list of specific cities. 
+This list can be connected with one or more data fields to become so a mandatory selection list for these fields.
+The data fields associated with such lists, behave as text fields. It is important to note this because, numeric fields, or date fields considered different from the classification and searching system. 
+You can of course create "numeric lists" but, you have to copy any list item into a numeric field through the clipboard (Ctrl-V).
+The use of a selection list is simple. If connected to a particular field then, while we are in input mode, by left-clicking on this field, the selection list is displayed, provided it is loaded beforehand! 
+Double-clicking on an item in the list (or click and ok), the item is automatically entered in the predetermined field and also copied to the clipboard. 
+If there is no predefined field then, you can also open a ready list and your selection is only copied to the clipboard. 
+Ready lists can be displayed (one at a time) either automatic or on your own initiative.
+- How we make a list of cities in Greece? 
+By left clicking the "Creation of a Ready List" option, an input box appears. You can write the names of cities there, one below the other, (separating by Enter), as in this example: 
+Athens
+Thessaloniki
+Lamia 
+etc ...... 
+You can always load data from an ascii txt file , or you can copy data into the input box from the clipboard of the operating system.
+The number of elements of a ready list may amount to thousands, while the maximum number of characters per line is about 45. Beyond this number, the remaining characters are cut and completely lost.
+Do not bother with the sorting order - this will be done automatically when you load the list and if you wish so... 
+The ready list is very helpful when data must be entered with perfectly uniform way! A field can be associated with either  one specific ready list or, with any ready list. 
+After entering all the data in the input box and leave it, your list will be ready to be saved in the directory :
+"/home/user_name/Pedaba/Lists/" with a name that you will be asked to give. 
+Ready lists are always saved in this directory and so they are available to all pedaba databases. 
+You can edit any list by loading and saving it to the disk again but, with another name for pedaba security reasons.
+You can change any list (file) name you want with the normal procedure of your operating system. If you associate a field with a list of which later changed its name, you must modify the connection between them!
+In pedaba you can load in memory up to 10 ready lists together. 
+
+
+ q. Show last loaded Ready List
+ 
+The last loaded ready list is displayed.
+
+
+ r. Choose a loaded Ready List
+
+A "table" of already loaded ready lists is displayed.
+You can select one of them to appear immediately afterwards. 
+Whenever you leave pedaba, you are asked about any loaded ready lists, if you want to be automatically loaded next time you will run the application.
+
+
+ s. Load Ready List
+
+A new ready list is loaded from the disk into the memory, which is also displayed on the screen 
+
+
+ r. Draft Notebook
+
+It is a durable notebook always at your disposal. No need to save your notes in the disk - it is done automatically.
+
+
+ u. Inkualizer
+
+Note that , this menu option is not connected to a data field, it simply allows you to create and save various combinations of colors ... 
+There are options on the inkualizer window . Right click for explanations.
+Of course you can specify colors for each field and label (fill color/background, text color/foreground and selected text color). 
+The colors can help ... and usually accelerate and facilitate our work. 
+You can select colors for the fields exclusively in design mode, by the data fields' propertied management window (which is displayed by right-clicking the field that interests you). 
+See under the label "Colors" .. You can work by making combinations of your choice. 
+There is an option to save the color combinations you create, which you can easily find them by clicking "Ready Color combinations for DB Fields". 
+
+
+ v. Ready Color combinations for DB Fields
+
+As above, this option affects field and label colors only through the data fields' properties management window.
+It is a dynamic list of ready-made color combinations. It shows you anything you saved on the disk when creating combinations. You can also delete any combination .
+There are options on the ready colors window . Right click for explanations.
+This list is linked to the previous option (Inkualizer).
+You can choose a color scheme from the ready colors list and then improve it by selecting "Inkualizer". The color combination goes directly from the list to the inkualizer.
+
+
+ w. Screen Colors
+ 
+The inkualizer window is displayed to adjust your screen colors. 
+Your settings are saved and relate only to the specific database. 
+Therefore, each database can have its own display colors.
+
+The Pedaba team
+Fanis Attard
+
+
+PS.
+A few words from pedaba's creator ..
+When I was writting code in the "distant past"... it ran with "randomize usr" ... for those who still remember and can understand..
+The screens were black and white! There were no truefonts and in fact they still "do not exist" in the field of my own knowledge!
+Once... the Motorola 68000 CPU came in our lifes and I remember I was in love with the ... moveml d0-d7 .. assembly command ...
+Later .. Borland's C Language came for me.
+The graphics were very poor of course, but the wealth of C was unlimited and as I discovered .. timeless!
+I never earned money from programming.
+Anyway ... at some point I left programming hobby for many years ...
+Dr. Guido Gonzato, with his wonderful library for customizing graphics, gave me the opportunity to take up again.
+I decided to build a database application on my own taste.
+I should definitely have a look at some things of SDL 2 and I did it but, it was certainly not easy for me (and out of my intension) to learn now all the modern details...
+That's why pedaba fonts are limited but ... you can do your job.
+Thank you very much.
+Iam sorry for my poor English.
+F.A.
